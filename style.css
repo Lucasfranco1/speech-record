@@ -1,0 +1,47 @@
+body{
+    background: rgb(32, 89, 224);
+}
+
+.container{
+    height: 100vh;
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    color:bisque;
+}
+
+.btn{
+    margin: 2rem 0rem;
+    border:none;
+    height: 5rem;
+    display: block;
+    width: 5rem;
+    background-color: dodgerblue;
+    border-radius: 100%;
+    font-size: 2rem;
+    color: white;
+}
+button:active{
+    background-color: rgb(32, 89, 224);
+}
+.btn-record{
+    background-color: black;
+}
+
+.span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    font-family: monospace;
+    font-size: 20px;
+
+}
