@@ -1,11 +1,15 @@
 const content = document.querySelector('.content')
-const btnRecordText = document.querySelector('.btn-record')
+const btnRecordText = document.querySelector('#btn-record')
+let number=0;
 /* Object for saved in micro */
 const recognitionVoice = window.SpeechRecognition || window.webkitSpeechRecognition
 const recognition = new recognitionVoice()
 /* method init record */
 recognition.onstart = ()=>{
     content.innerHTML = 'Recording...'
+}
+recognition.onStop = ()=>{
+    content.innerHTML = ' ';
 }
 /* Method for stop recorder */
 recognition.onresult = event =>{
@@ -31,5 +35,12 @@ const readTextCondition = (message)=>{
 }
 /* Event for record with the btn*/
 btnRecordText.addEventListener('click', ()=>{
-    recognition.start()
+    number++;
+    if(number == 1){
+        recognition.start()
+    }else{
+        number=0;
+        recognition.onStop()
+    }
+    
 })
