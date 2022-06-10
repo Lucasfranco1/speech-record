@@ -1,4 +1,7 @@
 # speech-record
-![Captura desde 2022-05-20 21-16-12](https://user-images.githubusercontent.com/87668648/169626594-270da56f-6777-47ac-83da-6f64941b25c9.png)
+
+![Captura desde 2022-06-10 01-55-29](https://user-images.githubusercontent.com/87668648/172993117-34246484-3ab7-42db-87ce-4b6e8b55cb7a.png)
+
+
 
 https://speech-record.vercel.app/
