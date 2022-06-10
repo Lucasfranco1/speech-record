@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="shortcut icon" href="/img/iconemicro.png" type="image/x-icon">  
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">    
 
@@ -13,11 +14,24 @@
     
     <div class="container">            
         <h1>Speech Recognition</h1> 
-        <button class="btn btn-record"><img src="img/RecordNormalRed_26931.png" alt="" style="width:50px; left:19px; margin-bottom: -8px;"></button>
+        <br>
+        <label>
+            <input type="checkbox" id="btn-record" >
+            <div class="icon">
+                <div class="shadow"></div>
+                <div class="iconBox">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                </div>
+            </div>
+        </label>
+        <br>
+        <br>
         <p class="content"></p>
     </div>
 
     <!-- Js -->
-    <script src="record-text.js"></script>      
+    <script src="record-text.js"></script>   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>     
 </body>
 </html>
